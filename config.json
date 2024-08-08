@@ -1,0 +1,55 @@
+{
+    "QL_SERVER_IP": "http://127.0.0.1",
+    "QL_SERVER_PORT": "5700",
+    "QL_APP_CLIENT_ID": "-E9z-XXXXXXX",
+    "QL_APP_CLIENT_SECRET": "kiXXXXXXXXXXX-2pnXXXX-zX",
+    "TASK": {
+        "TARGET_BASE_URL": "https://x.threatbook.com",
+        "COOKIE": "",
+        "API": {
+            "LIKE": {
+                "PATH": "/v5/node/user/like",
+                "METHOD": "POST",
+                "PARAMS": {
+                    "option": {
+                        "like": "0",
+                        "unlike": "1"
+                    }
+                }
+            },
+            "FOLLOW": {
+                "PATH": "/v5/node/community/userFollow/change/",
+                "METHOD": "GET",
+                "PARAMS": {
+                    "operation": {
+                        "follow": "follow",
+                        "unfollow": "unfollow"
+                    }
+                }
+            },
+            "ARTICLE": {
+                "PATH": "/v5/node/community/infoFlow/page",
+                "METHOD": "GET"
+            },
+            "USER": {
+                "PATH": "/v5/node/community/user/icon/",
+                "METHOD": "GET"
+            },
+            "POINT": {
+                "PATH": "/v5/node/enterprise/getTableList",
+                "METHOD": "GET",
+                "PARAMS": {
+                    "page": "0"
+                }
+            },
+            "LEVEL": {
+                "PATH": "/v5/node/enterprise/getTopList",
+                "METHOD": "GET"
+            },
+            "MY_INFO": {
+                "PATH": "/v5/node/intelServiceCenter/queryMyKey",
+                "METHOD": "GET"
+            }
+        }
+    }
+}
